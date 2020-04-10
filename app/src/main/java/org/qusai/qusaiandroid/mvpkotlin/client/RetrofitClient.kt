@@ -8,7 +8,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 object RetrofitClient
 
 {
-    private const val BASE_URL="";
+    private const val BASE_URL="https://jobs11.000webhostapp.com/jobs/";
     val okHttpClient=OkHttpClient.Builder().build()
     val instance: Api by lazy {
 val retrofit=Retrofit.Builder().baseUrl(BASE_URL)
